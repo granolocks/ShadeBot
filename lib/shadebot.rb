@@ -33,3 +33,4 @@ module ShadeBot ; end
 
 require 'shadebot/twitter_client'
 require 'shadebot/tweet_handler'
+require 'shadebot/handler_manager'
