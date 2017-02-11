@@ -2,7 +2,11 @@
 class String
   # colorization
   def colorize(color_code)
-    "\e[#{color_code}m#{self}\e[0m"
+    if $stdout.isatty
+      "\e[#{color_code}m#{self}\e[0m"
+    else
+      self
+    end
   end
 
   def color_map
