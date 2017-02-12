@@ -4,6 +4,8 @@ module Twitter
       line.split(" ").map do |word|
         if 0 == (word =~ /\.?@/)
           word.blue
+        elsif 0 == (word =~ /#/)
+          word.yellow
         else
           word
         end
