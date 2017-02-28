@@ -17,11 +17,10 @@
 #  /:/\:\ \:|__| /:/__/ \:\__\     /:/\:\__\
 #  \:\~\:\/:/  / \:\  \ /:/  /    /:/  \/__/
 #   \:\ \::/  /   \:\  /:/  /    /:/  /
-#    \:\/:/  /     \:\/:/  /     \/__/
-#     \::/__/       \::/  /
-#      ~~            \/__/
+#    \:\/:/  /     \:\/:/  /    /:/  /
+#     \::/__/       \::/  /    /:/  /
+#      ~~            \/__/     \/__/
 #
-
 require 'twitter'
 
 $:.unshift(File.dirname(__FILE__))
@@ -34,3 +33,5 @@ module ShadeBot ; end
 require 'shadebot/twitter_client'
 require 'shadebot/tweet_handler'
 require 'shadebot/handler_manager'
+require 'shadebot/term_notifier'
+require 'shadebot/config'
